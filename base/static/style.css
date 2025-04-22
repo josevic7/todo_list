@@ -1,0 +1,148 @@
+/* Overall Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Header */
+  h1 {
+    color: #3e614f;
+    text-align: center;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Welcome / Nav Links */
+  p, a {
+    font-size: 16px;
+    color: #3e614f;
+    margin: 0 5px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Quote Box */
+  #quote-box {
+    background-color: #e6efe6;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid #c5d3c5;
+    width: 80%;
+    text-align: center;
+  }
+  
+  #quote-text {
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  #quote-author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2e4637;
+  }
+  
+  button {
+    background-color: #3e614f;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2e4637;
+  }
+  
+  /* Task Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #c5d3c5;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #dbe9db;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f0f5f0;
+  }
+  
+  tr:hover {
+    background-color: #e0f0e0;
+  }
+  
+  .form-box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    color: #3e614f;
+    margin-bottom: 20px;
+  }
+  
+  .form-box input[type="submit"] {
+    background-color: #3e614f;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-box input[type="submit"]:hover {
+    background-color: #2e4637;
+  }
+  
+  .danger-btn {
+    background-color: #c0392b;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(192, 57, 43, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .danger-btn:hover {
+    background-color: #922b21;
+    transform: scale(1.02);
+  }
+  
+  
+  

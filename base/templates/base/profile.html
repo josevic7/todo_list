@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<div class="form-box">
+    <h2>My Profile</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save Changes">
+    </form>
+
+    <hr>
+
+    <p><strong>Date Joined:</strong> {{ request.user.date_joined }}</p>
+    <p><strong>Last Login:</strong> {{ request.user.last_login }}</p>
+    <p><a href="{% url 'password_change' %}">Change Password</a></p>
+    <p><a href="{% url 'tasks' %}">← Back to Tasks</a></p>
+</div>
+
+</body>
+</html>

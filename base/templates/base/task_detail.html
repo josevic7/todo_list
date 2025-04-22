@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Task Details</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<div class="form-box">
+  <h2>Task Details</h2>
+
+  <p><strong>Title:</strong> {{ task.title }}</p>
+
+  {% if task.description %}
+    <p><strong>Description:</strong> {{ task.description }}</p>
+  {% else %}
+    <p><em>No description provided.</em></p>
+  {% endif %}
+
+  <p><strong>Status:</strong> 
+    {% if task.complete %}
+      ✅ Completed
+    {% else %}
+      ❌ Incomplete
+    {% endif %}
+  </p>
+
+  <div style="margin-top: 20px;">
+    <a href="{% url 'task-update' task.id %}">✏️ Edit</a> |
+    <a href="{% url 'task-delete' task.id %}">🗑️ Delete</a> |
+    <a href="{% url 'tasks' %}">← Back to Tasks</a>
+  </div>
+</div>
+
+</body>
+</html>
